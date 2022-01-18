@@ -20,9 +20,30 @@ p {
 }
 
 .searchBox__Heading {
-    color: white;
-    
+    color: white;  
 }
+
+.searchAgain {
+    background-color: rgba(102, 96, 194, 0.698);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.home-link {
+    color: white;
+    font-size: 22px;
+    margin-right: 40px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 .wrapper  {
     background-color: rgba(102, 96, 194, 0.698);
@@ -36,14 +57,6 @@ p {
     align-items: center;
 }
 
-.searchAgain {
-
-    background-color: rgba(102, 96, 194, 0.698);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
 
 
 input[type=text] {
