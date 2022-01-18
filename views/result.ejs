@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Weather Checker</title>
+</head>
+
+<body>
+
+<header class="searchAgain">
+    <div class="searchBox__field">
+
+        <form class="cityForm" action="/" method="post">
+            <label for="cityInput"></label>
+            <input type="text" id="cityInput" name="cityName" placeholder="Search Again">
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</header>
+
+    <div class="weather__Container">
+        <div class="weather__Card">
+            <h1>
+                The current temperature in <%= name %> is <br>
+            </h1>
+            <p class="temperature__Number"><%= temp %>° <img src="<%= icon %>" alt=""></p>
+            <p>The weather description is "<%= description %>".</p>
+        </div>
+        <p>A weather app created by Raul Menendez using the OpenWeatherMap API.</p>
+    </div>
+
+
+
+</body>
+
+</html>
